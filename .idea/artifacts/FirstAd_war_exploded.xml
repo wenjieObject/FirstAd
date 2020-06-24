@@ -7,6 +7,10 @@
         <element id="directory" name="classes">
           <element id="module-output" name="FirstAd" />
         </element>
+        <element id="directory" name="lib">
+          <element id="file-copy" path="$PROJECT_DIR$/../../jar包和讲解/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/../../jar包和讲解/mybatis-3.5.2/mybatis-3.5.2.jar" />
+        </element>
       </element>
     </root>
   </artifact>
