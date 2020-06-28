@@ -23,7 +23,7 @@ public class UserServiceImpl implements UserService {
         // SqlSession - 会话, 用于所有mybatis中操作方法的调用
         SqlSession sqlSession = factory.openSession();
         // 调用方法进行查询
-        List<User> list = sqlSession.selectList("selAll");
+        List<User> list = sqlSession.selectList("com.wenjie.adc.selAll");
         // 关闭资源
         sqlSession.close();
 

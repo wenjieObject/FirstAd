@@ -19,7 +19,7 @@
     </environments>
 
     <mappers>
-        <mapper resource="UserMapper.xml" />
+        <mapper resource="com/wenjie/adc/mapper/UserMapper.xml" />
     </mappers>
 
 
