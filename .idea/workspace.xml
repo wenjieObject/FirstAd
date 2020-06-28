@@ -7,10 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="86f09841-7549-41a9-94b7-bcf6c7d70b82" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/resources/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wenjie/adc/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mybatis.xml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/mybatis.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/wenjie/adc/servlet/UserListServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wenjie/adc/servlet/UserListServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/userList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/userList.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/register.jsp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -333,7 +331,7 @@
       <workItem from="1592908083514" duration="4479000" />
       <workItem from="1592962176009" duration="3281000" />
       <workItem from="1593313862899" duration="6147000" />
-      <workItem from="1593324555509" duration="6332000" />
+      <workItem from="1593324555509" duration="8220000" />
     </task>
     <servers />
   </component>
