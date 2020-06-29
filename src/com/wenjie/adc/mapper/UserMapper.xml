@@ -8,4 +8,8 @@
     <select id="selAll" resultType="com.wenjie.adc.pojo.User">
         select id,username,password,realname,age,birthday,reg_time as regTime from tb_user
     </select>
+
+    <select id="insUser">
+        insert into tb_user values (default ,#{username},#{password},#{realname},#{age},#{birthday},#{regTime})
+    </select>
 </mapper>

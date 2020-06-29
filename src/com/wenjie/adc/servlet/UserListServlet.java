@@ -14,21 +14,59 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
-@WebServlet("/userList")
-public class UserListServlet extends HttpServlet {
+@WebServlet("/user")
+public class UserListServlet extends BaseServlet {
 
     private UserService userService=new UserServiceImpl();
 
-    @Override
-    public void service(ServletRequest req, ServletResponse res) throws ServletException, IOException {
-        //super.service(req, res);
+    /**
+     * 登录
+     * @param req
+     * @param resp
+     */
+    public void login(HttpServletRequest req, HttpServletResponse resp){
+
+    }
+
+    /**
+     * 注册
+     * @param req
+     * @param resp
+     */
+    public void register(HttpServletRequest req, HttpServletResponse resp)  throws ServletException, IOException {
+        //接收参数
+        User user=new User();
+        user.setUsername(req.getParameter("username"));
+        user.setPassword(req.getParameter("password"));
+        user.setRealname(req.getParameter("realname"));
+        user.setAge(req.getParameter("age"));
+        user.setBirthday(req.getParameter("birthday"));
 
         //调用service
-        List<User> users =  userService.userList();
-        //结果保存作用域
-        req.setAttribute("users",users);
-        //页面跳转
-        req.getRequestDispatcher("/userList.jsp").forward(req,res);
+        try{
+            userService.register(user);
+            //页面跳转：login.jsp
+            resp.sendRedirect(req.getContextPath()+"/login.jsp");
+        }catch (Exception e){
+            e.printStackTrace();
+            req.setAttribute("msg","注册失败："+e.getMessage());
+            req.getRequestDispatcher("/register.jsp").forward(req,resp);
+
+        }
+
+
     }
+
+//    @Override
+//    public void service(ServletRequest req, ServletResponse res) throws ServletException, IOException {
+//        //super.service(req, res);
+//
+//        //调用service
+//        List<User> users =  userService.userList();
+//        //结果保存作用域
+//        req.setAttribute("users",users);
+//        //页面跳转
+//        req.getRequestDispatcher("/userList.jsp").forward(req,res);
+//    }
 
 }

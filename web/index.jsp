@@ -11,6 +11,6 @@
     <title>$Title$</title>
   </head>
   <body>
-  <a href="userList">测试列表</a>
+  <a href="user">测试列表</a>
   </body>
 </html>

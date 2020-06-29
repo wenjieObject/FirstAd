@@ -11,6 +11,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.List;
 
+
 public class UserServiceImpl implements UserService {
 
     @Override
@@ -30,5 +31,22 @@ public class UserServiceImpl implements UserService {
         return list;
 
 
+    }
+
+    @Override
+    public void register(User user) {
+//        SqlSession sqlSession = MyBatisUtil.openSession();
+//        //创建SimpleDateFormat对象实例并定义好转换格式
+//        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+//
+//        try {
+//            user.setRegTime(sdf.format(new Date()));
+//            sqlSession.insert("insUser",user);
+//            sqlSession.commit();
+//        }catch (Exception e){
+//            e.printStackTrace();
+//            sqlSession.rollback();
+//        }
+//        sqlSession.close();
     }
 }
