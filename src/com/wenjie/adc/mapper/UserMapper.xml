@@ -3,7 +3,7 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <!--namespace属性必须添加-->
-<mapper namespace="com.wenjie.adc">
+<mapper namespace="com.wenjie.adc.mapper.UserMapper">
     <!--id属性类似于方法名, resultType表示查询结果返回的类型-->
     <select id="selAll" resultType="com.wenjie.adc.pojo.User">
         select id,username,password,realname,age,birthday,reg_time as regTime from tb_user
@@ -11,5 +11,32 @@
 
     <select id="insUser">
         insert into tb_user values (default ,#{username},#{password},#{realname},#{age},#{birthday},#{regTime})
+    </select>
+
+
+    <select id="selByPage" resultType="com.wenjie.adc.pojo.User">
+        select id,username,password,realname,age,birthday,reg_time as regTime from tb_user
+        <where>
+            <if test="username !=null and username!='' ">
+            <bind name="username" value=" '%'+username+'%' "/>
+                and username like #{username}
+            </if>
+            <if test="age !=null and age!='' ">
+                and age = #{age}
+            </if>
+        </where>
+    </select>
+
+    <select id="sel4Login" resultType="com.wenjie.adc.pojo.User">
+        select id,username,password,realname,age,birthday,reg_time as regTime from tb_user
+        <where>
+            <if test="username !=null and username!='' ">
+                and username = #{username}
+            </if>
+            <if test="password !=null and password!='' ">
+                and password = #{password}
+            </if>
+        </where>
+
     </select>
 </mapper>

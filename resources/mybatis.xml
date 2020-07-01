@@ -19,7 +19,8 @@
     </environments>
 
     <mappers>
-        <mapper resource="com/wenjie/adc/mapper/UserMapper.xml" />
+<!--        <mapper resource="com/wenjie/adc/mapper/UserMapper.xml" />-->
+        <package name="com.wenjie.adc.mapper"/>
     </mappers>
 
 

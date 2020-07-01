@@ -7,7 +7,9 @@ import java.util.List;
 
 public interface UserService {
 
-    List<User> userList() throws IOException;
+    List<User> userList(String username,String age) throws IOException;
 
     void register(User user);
+
+    User login(String  username,String password);
 }

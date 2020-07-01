@@ -19,12 +19,52 @@ public class UserListServlet extends BaseServlet {
 
     private UserService userService=new UserServiceImpl();
 
+
+    public void userList(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException{
+        String  username =req.getParameter("username");
+        String  age =req.getParameter("age");
+
+
+        List<User> users =  userService.userList(username,age);
+        //结果保存作用域
+        req.setAttribute("users",users);
+        req.setAttribute("username",username);
+        req.setAttribute("age",age);
+        //页面跳转
+        req.getRequestDispatcher("/userList.jsp").forward(req,resp);
+
+    }
     /**
      * 登录
      * @param req
      * @param resp
      */
-    public void login(HttpServletRequest req, HttpServletResponse resp){
+    public void login(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
+        String  username =req.getParameter("username");
+        String  password =req.getParameter("password");
+
+        //调用service
+        try{
+            User user = userService.login(username, password);
+            if(user!=null){
+                //调用service
+                List<User> users =  userService.userList("","");
+                //结果保存作用域
+                req.setAttribute("users",users);
+                //页面跳转
+                req.getRequestDispatcher("/userList.jsp").forward(req,resp);
+                return;
+            }
+
+
+        }catch (Exception e){
+            e.printStackTrace();
+            req.setAttribute("msg","注册失败："+e.getMessage());
+            req.getRequestDispatcher("/register.jsp").forward(req,resp);
+
+        }
+
 
     }
 

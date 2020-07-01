@@ -13,6 +13,15 @@
 </head>
 <body>
 <center>
+    <form action="user" method="post">
+        <input type="hidden" name="method" value="userList">
+        姓名：<input type="text" name="username" value="${username}">
+        年龄：<input type="text" name="age" value="${age}">
+        <input type="submit" value="查询">
+        <input type="reset" value="重置">
+    </form>
+
+    <hr>
     <table>
         <tr>
             <td>编号</td>

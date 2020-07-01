@@ -6,20 +6,15 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="86f09841-7549-41a9-94b7-bcf6c7d70b82" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/wenjie/adc/CharacterEncodingFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/wenjie/adc/servlet/BaseServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/wenjie/adc/util/DataUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/wenjie/adc/util/MyBatisUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/static/js/jquery-3.5.1.min.js" afterDir="false" />
+    <list default="true" id="2e2d4fc7-c1da-4d3e-8e04-f23ccfb2fac4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/wenjie/adc/mapper/UserMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FirstAd.iml" beforeDir="false" afterPath="$PROJECT_DIR$/FirstAd.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/mybatis.xml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/mybatis.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/wenjie/adc/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wenjie/adc/mapper/UserMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/wenjie/adc/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wenjie/adc/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/wenjie/adc/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wenjie/adc/service/impl/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/wenjie/adc/servlet/UserListServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wenjie/adc/servlet/UserListServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/register.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/userList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/userList.jsp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,7 +25,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -44,22 +39,21 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectId" id="1dzB3WuqAf2wGBggdx71Rn0lmtE" />
+  <component name="ProjectId" id="1e45XAwNa3Z9Jm2MeWo71I3UZ3M" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/WEB-INF/lib" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\javacode\web\FirstAd\web\WEB-INF\lib" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\javacode\web\FirstAd\resources" />
+      <recent name="E:\javacode\web\FirstAd\resources\com.wenjie.adc.mapper" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -74,27 +68,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 8.5.55">
-    <configuration name="TestMyBatis.testSelAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="FirstAd" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.wenjie.adc.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.wenjie.adc.test" />
-      <option name="MAIN_CLASS_NAME" value="com.wenjie.adc.test.TestMyBatis" />
-      <option name="METHOD_NAME" value="testSelAll" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Tomcat 8.5.55" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.55" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8081/" />
-      <option name="COMMON_VM_ARGUMENTS" value="-Dfile.encoding=UTF-8" />
-      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+  <component name="RunManager">
+    <configuration name="Tomcat 7.0.104" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.104" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="FirstAd:war exploded">
@@ -104,8 +80,7 @@
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="Tomcat_8_5_55_FirstAd_2" />
-        <option name="HTTP_PORT" value="8081" />
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_FirstAd" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -113,7 +88,7 @@
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="2397" />
+        <option name="DEBUG_PORT" value="16462" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -167,100 +142,18 @@
         </option>
       </method>
     </configuration>
-    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.55" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="UPDATING_POLICY" value="restart-server" />
-      <deployment>
-        <artifact name="FirstAd:war exploded">
-          <settings>
-            <option name="CONTEXT_PATH" value="/" />
-          </settings>
-        </artifact>
-      </deployment>
-      <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="_FirstAd_2" />
-      </server-settings>
-      <predefined_log_file enabled="true" id="Tomcat" />
-      <predefined_log_file enabled="true" id="Tomcat Catalina" />
-      <predefined_log_file id="Tomcat Manager" />
-      <predefined_log_file id="Tomcat Host Manager" />
-      <predefined_log_file id="Tomcat Localhost Access" />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="2397" />
-      </RunnerSettings>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <method v="2">
-        <option name="Make" enabled="true" />
-        <option name="BuildArtifacts" enabled="true">
-          <artifact name="FirstAd:war exploded" />
-        </option>
-      </method>
-    </configuration>
-    <list>
-      <item itemvalue="Tomcat Server.Tomcat 8.5.55" />
-      <item itemvalue="JUnit.TestMyBatis.testSelAll" />
-    </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="JUnit.TestMyBatis.testSelAll" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="86f09841-7549-41a9-94b7-bcf6c7d70b82" name="Default Changelist" comment="" />
-      <created>1593417843259</created>
+      <changelist id="2e2d4fc7-c1da-4d3e-8e04-f23ccfb2fac4" name="Default Changelist" comment="" />
+      <created>1593568062382</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1593417843259</updated>
-      <workItem from="1593417847497" duration="562000" />
-      <workItem from="1593418607415" duration="1143000" />
+      <updated>1593568062382</updated>
+      <workItem from="1593568065858" duration="12053000" />
     </task>
     <servers />
   </component>
@@ -272,9 +165,7 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
