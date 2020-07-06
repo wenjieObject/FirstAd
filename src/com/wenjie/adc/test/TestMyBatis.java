@@ -1,6 +1,10 @@
 package com.wenjie.adc.test;
 
+import com.wenjie.adc.mapper.Mapper;
+import com.wenjie.adc.mapper.UserMapper;
+import com.wenjie.adc.pojo.Student;
 import com.wenjie.adc.pojo.User;
+import com.wenjie.adc.util.MyBatisUtil;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -12,6 +16,33 @@ import java.io.InputStream;
 import java.util.List;
 
 public class TestMyBatis {
+
+    @Test
+    public void testMulTables() throws Exception{
+        SqlSession sqlSession = MyBatisUtil.openSession();
+        Mapper mapper = sqlSession.getMapper(Mapper.class);
+
+        List<Student> allStudent = mapper.getAllStudent("男","Java");
+
+        for (Student student : allStudent) {
+            System.out.println(student.toString());
+        }
+
+    }
+
+    @Test
+    public void testDynamic() throws Exception{
+        SqlSession sqlSession = MyBatisUtil.openSession();
+        UserMapper mapper = sqlSession.getMapper(UserMapper.class);
+
+        List<User> users = mapper.selByPage("", "", 0, 0);
+
+        for (User user : users) {
+            System.out.println(user.toString());
+        }
+
+
+    }
 
     @Test
     public void testSelAll() throws Exception {

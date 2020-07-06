@@ -3,6 +3,8 @@ package com.wenjie.adc.servlet;
 import com.wenjie.adc.pojo.User;
 import com.wenjie.adc.service.UserService;
 import com.wenjie.adc.service.impl.UserServiceImpl;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;
@@ -17,7 +19,21 @@ import java.util.List;
 @WebServlet("/user")
 public class UserListServlet extends BaseServlet {
 
-    private UserService userService=new UserServiceImpl();
+    private UserService userService;
+    @Override
+    public void init() throws ServletException {
+        super.init();
+
+        // 加载Spring配置文件, 得到Spring容器对象
+        ApplicationContext context =
+                new ClassPathXmlApplicationContext("classpath:applicationContext.xml");
+
+        // 从容器中获取需要的对象
+        this.userService = context.getBean("userService", UserService.class);
+
+    }
+
+
 
 
     public void userList(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException{

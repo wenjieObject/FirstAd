@@ -7,14 +7,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2e2d4fc7-c1da-4d3e-8e04-f23ccfb2fac4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/wenjie/adc/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/wenjie/adc/mapper/Mapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/wenjie/adc/mapper/Mapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/wenjie/adc/pojo/Clazz.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/wenjie/adc/pojo/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/commons-logging-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/spring-beans-4.3.18.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/spring-context-4.3.18.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/spring-core-4.3.18.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/spring-expression-4.3.18.RELEASE.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FirstAd.iml" beforeDir="false" afterPath="$PROJECT_DIR$/FirstAd.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/mybatis.xml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/mybatis.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/wenjie/adc/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wenjie/adc/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/wenjie/adc/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wenjie/adc/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/wenjie/adc/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wenjie/adc/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wenjie/adc/pojo/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wenjie/adc/pojo/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/wenjie/adc/servlet/UserListServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wenjie/adc/servlet/UserListServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/userList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/userList.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wenjie/adc/test/TestMyBatis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wenjie/adc/test/TestMyBatis.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,7 +33,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Class" />
         <option value="Interface" />
+        <option value="spring-beans.schema" />
       </list>
     </option>
   </component>
@@ -39,6 +49,13 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="userSettingsFile" value="D:\SoftWare\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="1e45XAwNa3Z9Jm2MeWo71I3UZ3M" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -46,11 +63,16 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/WEB-INF/lib" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\javacode\web\FirstAd\web\WEB-INF\lib" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\javacode\web\FirstAd\resources" />
       <recent name="E:\javacode\web\FirstAd\resources\com.wenjie.adc.mapper" />
@@ -68,7 +90,39 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 7.0.104">
+    <configuration name="TestMyBatis.testDynamic" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FirstAd" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wenjie.adc.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.wenjie.adc.test" />
+      <option name="MAIN_CLASS_NAME" value="com.wenjie.adc.test.TestMyBatis" />
+      <option name="METHOD_NAME" value="testDynamic" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestMyBatis.testMulTables" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FirstAd" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wenjie.adc.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.wenjie.adc.test" />
+      <option name="MAIN_CLASS_NAME" value="com.wenjie.adc.test.TestMyBatis" />
+      <option name="METHOD_NAME" value="testMulTables" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Tomcat 7.0.104" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.104" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/" />
       <option name="UPDATING_POLICY" value="restart-server" />
@@ -142,6 +196,12 @@
         </option>
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.TestMyBatis.testMulTables" />
+        <item itemvalue="JUnit.TestMyBatis.testDynamic" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -153,7 +213,10 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1593568062382</updated>
-      <workItem from="1593568065858" duration="12053000" />
+      <workItem from="1593568065858" duration="12795000" />
+      <workItem from="1593674195486" duration="627000" />
+      <workItem from="1593738088253" duration="6662000" />
+      <workItem from="1594007584588" duration="548000" />
     </task>
     <servers />
   </component>
@@ -165,7 +228,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

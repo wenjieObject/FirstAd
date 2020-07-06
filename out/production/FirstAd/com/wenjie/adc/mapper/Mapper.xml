@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--namespace属性必须添加-->
+<mapper namespace="com.wenjie.adc.mapper.Mapper">
+
+    <resultMap id="smap" type="student" autoMapping="true">
+        <!--关联单个对象要使用association-->
+        <association property="clazz" javaType="clazz" autoMapping="true">
+            <id column="cid" property="id" />
+            <result column="cname" property="name" />
+        </association>
+    </resultMap>
+
+
+    <select id="getAllStudent" resultMap="smap">
+            select
+        s.*, c.name cname, c.room
+    from
+        tb_student s
+    left join
+        tb_class c
+    on
+        s.cid = c.id
+    where s.gender = #{arg0} and c.name =#{arg1}
+
+    </select>
+
+
+</mapper>
